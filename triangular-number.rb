@@ -60,11 +60,7 @@ end
 n = 0
 i = 1
 
-while NumberOfDivisors(n) < 8
-  puts "#{i-1} triangle number"
-  puts "Triangle Number (n) = #{n}"
-  puts "Number of Divisors = #{NumberOfDivisors(n)}"
-  puts "-" * 10
+while NumberOfDivisors(n) < 500
   n += i
   i += 1
 end

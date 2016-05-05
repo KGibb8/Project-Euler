@@ -47,42 +47,4 @@ finish = Time.now
 "Calculation took #{finish - start} seconds"
 
 # Better way of doing is not having array but checking to see if the new value for n is greater than the previous one.
-# Have a counter instead of array.
-
-
-
-# The answer is a, when inner.length has the highest value
-# How do you extract a without jumbling up all of your arrays?
-
-
-start = Time.now
-
-n = 14
-until i == 1000000
-    a = n
-    chain = 1 # no. of numbers in sequence
-    b = 1
-    while n > 1
-      if even(n)
-        n = n / 2
-        chain += 1
-      else
-        n = (3 * n) + 1
-        chain += 1
-      end
-    end
-    if chain > b
-      b = chain
-    end
-
-
-
-    i += 1
-
-    n = a + 1
-  puts n
-end
-puts a
-
-finish = Time.now
-"Calculation took #{finish - start} seconds"
+# Temporarily store a value in a variable

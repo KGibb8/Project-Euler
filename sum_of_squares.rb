@@ -12,7 +12,7 @@ puts "Find the difference between the sum of the squares and the square of the s
 puts "Define 'n'"
 n = gets.chomp
 integers = []
-n = Integer(n)
+n = n.to_i
 
 for num in 1..n
   integers.push(num)
