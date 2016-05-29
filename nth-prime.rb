@@ -1,4 +1,12 @@
 class Primes
+  def even(n)
+    if n % 2 == 0
+      even = true
+    else
+      even = false
+    end
+  end
+
   def nth_prime(input)
     n = 1
     primes = []
