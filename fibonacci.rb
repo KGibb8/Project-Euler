@@ -19,7 +19,7 @@ y = 0
 z = 0
 sum = 0
 
-while z < 4000000
+while z < limit
   z = x + y
   if even(z) == true
     sum += z

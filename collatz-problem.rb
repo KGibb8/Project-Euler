@@ -11,14 +11,6 @@
 
 # Which starting number, under one million, produces the longest chain?
 
-def even(n)
-  if n % 2 == 0
-    even = true
-  else
-    even = false
-  end
-end
-
 start = Time.now
 
 n = 14
@@ -27,7 +19,7 @@ until n == 1000000
     a = n
     inner = []
     while n > 1
-      if even(n)
+      if even?
         n = n / 2
         inner.push(n)
       else
