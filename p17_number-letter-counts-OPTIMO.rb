@@ -59,7 +59,7 @@ def numToWords(num)
     return teens[a-1]
   end
 
-  def hundred(a, b, c)  # a is ones, b is tens, c is hundreds
+  def hundred(a, b, c)  # a is ones, b is tens, c is hundreds, ??d is words??
     return "" if c == 0
     hundred = "hundred"
     return ones(c) + " " + hundred if a + b == 0
@@ -71,42 +71,61 @@ def numToWords(num)
 
   def thousand(a, b, c, d, e=0, f=0) # a = ones, b = tens, c = hundreds, d = one thousands, e = ten thousands, f = hundred thousands
     thousand = "thousand"
-    if f == 0
-      return ones(d) + " " + thousand if (a + b + c + e) == 0
-      return ones(d) + " " + thousand + " and " + ones(a) if (b + c + e) == 0
-      return ones(d) + " " + thousand + " and " + tens(b) if (a + c + e) == 0
-      return ones(d) + " " + thousand + " and " + teens(a) if (b == 1) && (c + e == 0)
-      return ones(d) + " " + thousand + " and " + tens(b) + " " + ones(a) if (c + e == 0)
-      return ones(d) + " " + thousand + " " + hundred(a, b, c) if (e == 0)
+    if f == 0 # if < 99,999
+      if (c + e) == 0
+        return ones(d) + " " + thousand if a + b == 0
+        return ones(d) + " " + thousand + " and " + ones(a) if (b == 0)
+        return ones(d) + " " + thousand + " and " + tens(b) if (a == 0)
+        return ones(d) + " " + thousand + " and " + teens(a) if (b == 1)
+        return ones(d) + " " + thousand + " and " + tens(b) + " " + ones(a)
+      else
+        return ones(d) + " " + thousand + " " + hundred(a, b, c)
+      end
 
-      return tens(e) + " " + thousand if (a + b + c + d + f) == 0
-      return tens(e) + " " + thousand + " and " + ones(a) if (b + c + d) == 0
-      return tens(e) + " " + thousand + " and " + tens(b) if (a + c + d) == 0
-      return tens(e) + " " + thousand + " and " + teens(a) if (b == 1) && (c + d == 0)
-      return tens(e) + " " + thousand + " and " + tens(b) + " " + ones(a) if (c + d == 0)
-      return tens(e) + " " + thousand + " " + hundred(a, b, c) if (d == 0)
+      if (c + d) == 0
+        return tens(e) + " " + thousand if a + b == 0
+        return tens(e) + " " + thousand + " and " + ones(a) if (b == 0)
+        return tens(e) + " " + thousand + " and " + tens(b) if (a == 0)
+        return tens(e) + " " + thousand + " and " + teens(a) if (b == 1)
+        return tens(e) + " " + thousand + " and " + tens(b) + " " + ones(a)
+      else
+        return tens(e) + " " + thousand + " " + hundred(a, b, c)
+      end
 
-      return teens(d) + " " + thousand if (a + b + c == 0) && (e == 1)
-      return teens(d) + " " + thousand + " and " + ones(a) if (e == 1) && (b + c) == 0
-      return teens(d) + " " + thousand + " and " + tens(b) if (e == 1) && (a + c) == 0
-      return teens(d) + " " + thousand + " and " + teens(a) if (e + b == 2) && (c == 0)
-      return teens(d) + " " + thousand + " and " + tens(b) + " " + ones(a) if (c == 0)
-      return teens(d) + " " + thousand + " " + hundred(a, b, c) if (e == 1)
+      if c == 0
+        if e == 1
+          return teens(d) + " " + thousand if a + b == 0
+          return teens(d) + " " + thousand + " and " + ones(a) if (b == 0)
+          return teens(d) + " " + thousand + " and " + tens(b) if (a == 0)
+          return teens(d) + " " + thousand + " and " + teens(a) if (b == 1)
+        else
+          return teens(d) + " " + thousand + " and " + tens(b) + " " + ones(a)
+        end
 
-      return tens(e) + " " + ones(d) + " " + thousand if (a + b + c) == 0
-      return tens(e) + " " + ones(d) + " " + thousand + " and " + ones(a) if (b + c) == 0
-      return tens(e) + " " + ones(d) + " " + thousand + " and " + tens(b) if (a + c) == 0
-      return tens(e) + " " + ones(d) + " " + thousand + " and " + teens(a) if (b == 1) && (c == 0)
-      return tens(e) + " " + ones(d) + " " + thousand + " and " + tens(b) + " " + ones(a) if  (c == 0)
-      return tens(e) + " " + ones(d) + " " + thousand + " " + hundred(a, b, c)
+      elsif e == 1
+        return teens(d) + " " + thousand + " " + hundred(a, b, c)
+
+      else
+        return tens(e) + " " + ones(d) + " " + thousand if a + b == 0
+        return tens(e) + " " + ones(d) + " " + thousand + " and " + ones(a) if (b == 0)
+        return tens(e) + " " + ones(d) + " " + thousand + " and " + tens(b) if (a == 0)
+        return tens(e) + " " + ones(d) + " " + thousand + " and " + teens(a) if (b == 1)
+        return tens(e) + " " + ones(d) + " " + thousand + " and " + tens(b) + " " + ones(a)
+      end
+
+    return tens(e) + " " + ones(d) + " " + thousand + " " + hundred(a, b, c)
     else
-      return hundred(d, e, f) + " " + thousand if (a + b + c + d + e) == 0
-      return hundred(d, e, f) + " " + thousand + " and " + ones(a) if (b + c) == 0
-      return hundred(d, e, f) + " " + thousand + " and " + tens(b) if (a + c) == 0
-      return hundred(d, e, f) + " " + thousand + " and " + teens(a) if (b == 1) && (c == 0)
-      return hundred(d, e, f) + " " + thousand + " and " + tens(b) + " " + ones(a) if (c == 0)
-      return hundred(d, e, f) + " " + thousand + " " + hundred(a, b, c)
+      if c == 0
+        return hundred(d, e, f) + " " + thousand if (a + b + d + e) == 0
+        return hundred(d, e, f) + " " + thousand + " and " + ones(a) if b == 0
+        return hundred(d, e, f) + " " + thousand + " and " + tens(b) if a == 0
+        return hundred(d, e, f) + " " + thousand + " and " + teens(a) if (b == 1)
+        return hundred(d, e, f) + " " + thousand + " and " + tens(b) + " " + ones(a)
+      else
+        return hundred(d, e, f) + " " + thousand + " " + hundred(a, b, c)
+      end
     end
+
   end
 
   return ones(integers[0]) if Math::log10(num) < 1  # < 10
