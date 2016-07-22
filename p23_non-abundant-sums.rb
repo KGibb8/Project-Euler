@@ -17,42 +17,66 @@
 # of two abundant numbers.
 
 class Integer
-  def abundant?
+  def abundant
     divisors = []
     for i in 1..self/2
       divisors << i if self % i == 0
     end
     sum = divisors.inject(0) {|sum, x| sum += x}
-    sum > self ? true : false
+    sum > self ? self : nil
   end
 end
 
-## Treat it like a sieve ##
+start = Time.now
 
+# Create range:
+
+limit = 28123
 range = []
-for i in 1..28123
+
+for i in 1..limit
   range << i
 end
 
-range.each do |x|
-  range.delete(x) if x.abundant?
-end
-
-# Now we have an array of all non-abundant numbers
-# Next step is to eliminate abundant sums
 # Find abundants:
 
 abundants = []
 
-for i in 1..28123
-  abundants.push(i) if i.abundant?
+for i in 1..limit
+  a = i.abundant
+  abundants << a if a != nil
 end
 
-# iterate over abundants deleting sum of x with y from range. If sum > 28123, ignore
+# Find abundant sums:
 
+abundant_sums = []
 abundants.each do |x|
   abundants.each do |y|
-    next if x + y >= 28123
-    range.delete(x + y)
+    if x + y <= limit
+      abundant_sums << x + y
+    else
+      break
+    end
   end
 end
+
+# Remove recurring values
+
+abundant_sums.uniq!
+
+# Remove abundant sums from range:
+
+abundant_sums.each do |x|
+  range.delete(x) if range.include? x
+end
+
+# Sum range:
+
+sum = 0
+for i in range
+  sum += i
+end
+
+finish = Time.now
+puts "Calculation took #{finish - start} seconds.\n"
+puts "The sum of all non-abundant-sum positive integers is #{sum}.\n"

@@ -29,7 +29,7 @@ end
 puts both
 
 # both = [1, 15, 40755, 567645, 1533776805]
-# Answer is 1533776805, but the actual answer to the question SHOULD be 567645?
+# Answer is 1533776805, but the answer to the question should be 567645??? Confused.
 
 
 # ATTEMPT No. 2

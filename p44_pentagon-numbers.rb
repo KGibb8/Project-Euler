@@ -27,8 +27,7 @@ class Fixnum
   end
 end
 
-# Iterate pentagonally, using nth_pentagonal, with n incrementing
-#
+
 
 pentagonal_D = Hash.new
 # Key is the two pentagonal numbers Pj + Pk
@@ -38,13 +37,13 @@ pentagonal_D = Hash.new
 
 (1..10000).each do |x|
   a = x.nth_pentagonal
-  (x..10000).each do |y|
+  x.downto(1).each do |y|
     sum = false
     diff = false
     b = y.nth_pentagonal
     sum = true if (a + b).pentagonal?
-    diff = true if (b - a).pentagonal?
-    (pentagonal_D["#{x} + #{y}: #{a} + #{b}"] = ("D = #{b - a}")) if (sum == true && diff == true)
+    diff = true if (a - b).pentagonal?
+    (pentagonal_D["#{x} + #{y}: #{a} + #{b}"] = ("D = #{a - b}")) if (sum == true && diff == true)
   end
 end
 

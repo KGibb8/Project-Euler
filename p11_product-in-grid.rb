@@ -25,3 +25,75 @@
 
 # What is the greatest product of four adjacent numbers in the same direction
 # (up, down, left, right, or diagonally) in the 20×20 grid?
+
+Dir.chdir(File.dirname(__FILE__))
+
+def grid_to_arrays(filename)
+  open filename do |file|
+    grid = []
+    while line = file.gets
+      grid << line.split.map {|i| i.to_i}
+    end
+    return grid
+  end
+end
+
+grid = grid_to_arrays('p011_grid.txt')
+products = []
+
+start = Time.now
+# Pattern for each row
+
+a = 0
+while a < 20
+  n = 0
+  while n < grid[a].length
+    break if grid[a][n+3] == nil
+    products << (grid[a][n] * grid[a][n+1] * grid[a][n+2] * grid[a][n+3])
+    n += 1
+  end
+  a += 1
+end
+
+# Pattern for each column
+
+a = 0
+n = 0
+while a < 20
+  break if grid[a+3] == nil
+  products << (grid[a][n] * grid[a+1][n] * grid[a+2][n] * grid[a+3][n])
+  a += 1
+end
+
+# Pattern for left to right diagonals
+
+a = 0
+while a < 20
+  n = 0
+  break if grid[a+3] == nil
+  while n < grid[a].length
+    break if grid[a+3][n+3] == nil
+    products << (grid[a][n] * grid[a+1][n+1] * grid[a+2][n+2] * grid[a+3][n+3])
+    n += 1
+  end
+  a += 1
+end
+
+# Patters for right to left diagonals
+
+a = 0
+while a < 20
+  n = 0
+  break if grid[a+3] == nil
+  while n < grid[a].length
+    next if grid[a][n] == nil
+    products << grid[a][n] * grid[a+1][n-1] * grid[a+2][n-2] * grid[a+3][n-3]
+    n += 1
+  end
+  a += 1
+end
+
+products.sort!
+finish = Time.now
+puts "Calculation took #{finish - start} seconds.\n"
+puts "The answer is: #{products[-1]}"

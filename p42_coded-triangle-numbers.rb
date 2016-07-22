@@ -14,7 +14,6 @@
 
 Dir.chdir(File.dirname(__FILE__))
 
-# n is triangular if and only if 8n+1 is a perfect square
 
 class Fixnum
   def triangular?

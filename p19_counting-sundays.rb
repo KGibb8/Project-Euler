@@ -122,7 +122,6 @@ class Pathway
     start = Time.now
     puts "Calculating...\n"
 
-    # Creates Array of Year objects
     years = []
     (@range[0]..@range[1]).each {|x| y = Year.new(x); years << y}
 
@@ -130,7 +129,6 @@ class Pathway
     years.each do |year|
       year.months.each do |month|
         (1..month).each do |day|
-          # year.count_day no longer a relevant method. Should call self.days_of_week
           self.count_day(:sun_first) if (day == 1 && @day_count == 7)
           self.count_day(:monday) if @day_count == 1
           self.count_day(:tuesday) if @day_count == 2
@@ -152,23 +150,3 @@ end
 
 calendar = Pathway.new
 calendar.start
-
-
-=begin
-
- - I'VE BUILT THIS ITERATOR BUT I MAY WELL BE ABLE TO CALCULATE THIS USING THE Time class
-
- - Find out which day is 1st Jan XXXX using current date as relative comparitor
-
-    total_days = 0
-    years.each do |year|
-      UI.dot
-      total days += year.days?
-    end
-    @day_count = total_days % 7
-
- - Add methods for User_Interface & in Pathway that allow for input to determine
-   any year - calculate starting day (:monday..:sunday) and adjust @day_count accordingly
-   to allow @range to work properly
-
-=end
