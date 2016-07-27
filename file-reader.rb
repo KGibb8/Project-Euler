@@ -1,9 +1,9 @@
 
 class FileReader
-  attr_reader :string, :grid, :words
+  attr_reader :string, :i_array, :words
   def initialize(filename)
-    @string = lines_to_s(filename)
-    @grid = lines_to_arrays(filename)
+    @string = lines_to_string(filename)
+    @i_array = lines_to_arrays(filename)
     @words = gets_words(filename)
   end
 
@@ -18,17 +18,17 @@ class FileReader
     end
   end
 
-  def lines_to_arrays(filename)
+  def lines_to_i_arrays(filename)
     open filename do |file|
-      grid = []
+      lines = []
       while line = file.gets
-        grid << line.split.map {|i| i.to_i}
+        lines << line.split.map {|i| i.to_i}
       end
-      return grid
+      return lines
     end
   end
 
-  def lines_to_s(filename)
+  def lines_to_string(filename)
     open (filename) do |file|
       string = ""
       while line = file.gets

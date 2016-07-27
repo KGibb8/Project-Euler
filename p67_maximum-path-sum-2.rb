@@ -12,23 +12,11 @@
 # 'Save Link/Target As...'), a 15K text file containing a triangle with
 # one-hundred rows.
 
+require './file-reader'
+
 puts "File executed..."
 
-def txt_to_array(filename)
-  open(filename) do |file|
-    lines = []
-    while (line = file.gets)
-      array = line.split
-      array = array.map {|x| x.to_i}
-      lines.push(array)
-    end
-    return lines
-  ensure
-    file.close if file
-  end
-end
-
-data = txt_to_array('p067_triangle.txt')
+data = FileReader.new('p067_triangle.txt').i_array
 
 def maxsum(data)
   n = -1

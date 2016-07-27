@@ -36,7 +36,7 @@ class Navigator
   end
 
   def find_data(source_file)
-    source_file.grid
+    source_file.i_array
   end
 
   def answer
