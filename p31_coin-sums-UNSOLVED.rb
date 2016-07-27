@@ -1,4 +1,4 @@
-  
+
 # In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation:
 
 # 1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).
@@ -31,3 +31,16 @@ until total == 200
 end
 
 pocket = CoinSet.new
+
+coins = [200, 100, 50, 20, 10, 5, 2, 1]
+
+routes = 0
+loop do
+  sum = 0
+  until sum == 200
+    coins.each do |x|
+      sum += x
+      break if sum == 200
+    routes += 1 if sum == 200
+  end
+end

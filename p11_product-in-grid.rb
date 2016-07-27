@@ -26,8 +26,91 @@
 # What is the greatest product of four adjacent numbers in the same direction
 # (up, down, left, right, or diagonally) in the 20×20 grid?
 
-Dir.chdir(File.dirname(__FILE__))
+require './file-reader'
 
+class Navigator
+  attr_reader :products, :data
+  def initialize(source_file)
+    @products = []
+    @data = find_data(source_file)
+  end
+
+  def find_data(source_file)
+    source_file.grid
+  end
+
+  def answer
+    start = Time.now
+    self.row
+    self.column
+    self.left_right_diagonal
+    self.right_left_diagonal
+    @products.sort!
+    finish = Time.now
+    puts "Calculation took #{finish - start} seconds.\n"
+    puts "The answer is: #{@products[-1]}"
+  end
+
+  def row
+    a = 0
+    while a < 20
+      n = 0
+      while n < @data[a].length
+        break if @data[a][n+3] == nil
+        @products << (@data[a][n] * @data[a][n+1] * @data[a][n+2] * @data[a][n+3])
+        n += 1
+      end
+      a += 1
+    end
+  end
+
+  def column
+    a = 0
+    n = 0
+    while a < 20
+      break if @data[a+3] == nil
+      @products << (@data[a][n] * @data[a+1][n] * @data[a+2][n] * @data[a+3][n])
+      a += 1
+    end
+  end
+
+  def left_right_diagonal
+    a = 0
+    while a < 20
+      n = 0
+      break if @data[a+3] == nil
+      while n < @data[a].length
+        break if @data[a+3][n+3] == nil
+        @products << (@data[a][n] * @data[a+1][n+1] * @data[a+2][n+2] * @data[a+3][n+3])
+        n += 1
+      end
+      a += 1
+    end
+  end
+
+  def right_left_diagonal
+    a = 0
+    while a < 20
+      n = 0
+      break if @data[a+3] == nil
+      while n < @data[a].length
+        next if @data[a][n] == nil
+        @products << @data[a][n] * @data[a+1][n-1] * @data[a+2][n-2] * @data[a+3][n-3]
+        n += 1
+      end
+      a += 1
+    end
+  end
+
+end
+
+grid = Navigator.new(FileReader.new('p011_grid.txt'))
+grid.answer
+
+#################################################
+#################################################
+
+=begin
 def grid_to_arrays(filename)
   open filename do |file|
     grid = []
@@ -38,11 +121,16 @@ def grid_to_arrays(filename)
   end
 end
 
+
+Dir.chdir(File.dirname(__FILE__))
+
 grid = grid_to_arrays('p011_grid.txt')
 products = []
 
 start = Time.now
 # Pattern for each row
+
+
 
 a = 0
 while a < 20
@@ -97,3 +185,5 @@ products.sort!
 finish = Time.now
 puts "Calculation took #{finish - start} seconds.\n"
 puts "The answer is: #{products[-1]}"
+
+=end

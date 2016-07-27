@@ -16,6 +16,21 @@ def chain
   chain = integers.inject(0) {|sum, item| square = item ** 2; sum += square}
 end
 
+count = 10000000
+x = 2
+until x == 10000000
+  num = x.chain
+  until num == 89
+    num = num.chain
+    if num == 1
+      count -= 1
+      puts count
+      break
+    end
+  end
+  x += 1
+end
+
 start = Time.now
 count = 0
 x = 2
