@@ -14,15 +14,28 @@
 
 # Find the value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal fraction part.
 
-write_to_file = []
+decimals = []
 
 d = 2
 loop do
   float = 1.0 / d
   array = float.to_s.scan(/./)
-  decimals = []
-  array[2..array.length].each { |i| decimals << i.to_i }
-  write_to_file << "#{d} : #{decimals}\n"
+  floats = []
+  array[2..array.length].each { |i| floats << i.to_i }
+  decimals << floats
   d += 1
   break if d == 1000
 end
+
+# .map(&:first) is same as writing .map {|i| i.first}
+# ary.group_by{ |e| e }.select { |k, v| v.size > 1 }.map(&:first)
+
+decimals[12].group_by{ |e| e }
+# this groups numbers them into hash. Key is the number, value is array of all items that occur. Repeating values added into array.
+decimals[12].group_by{ |e| e }.select { |k, v| v.size > 1 }
+# looks through hash, if key.size (length of Array of repeating items) is greater than one, select that item
+decimals[12].group_by{ |e| e }.select { |k, v| v.size > 1 }.map(&:first)
+decimals[12].group_by{ |e| e }.select { |k, v| v.size > 1 }.map {|i| i.first}
+decimals[12].group_by{ |e| e }.select { |k, v| v.size > 1 }.map {|i, v| i }
+# map keys from hash of repeating values to new array.
+# THIS IS NOT SOLUTION

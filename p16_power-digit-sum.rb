@@ -2,10 +2,9 @@
 
 # What is the sum of the digits of the number 2**1000?
 
+
 def sum_2_to_n(n)
   num = 2 ** n
   integers = num.to_s.scan(/./).map {|i| i.to_i}
-  sum = 0
-  integers.each { |n| sum += n }
-  return sum
+  integers.inject(0){|sum, item| sum += item}
 end

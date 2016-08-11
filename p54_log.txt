@@ -1,0 +1,1000 @@
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["5", "A"], :high=>"9"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["J"], :high=>"K"}, :loser=>{:pair=>["T"], :high=>"Q"}}
+{:winner=>{:two_pair=>["A", "4"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"K"}, :loser=>{:pair=>["5"], :high=>"A"}}
+{:winner=>{:straight=>["2", "3", "4", "5", "6"]}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"7"}, :loser=>{:pair=>["T"], :high=>"8"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["2"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["4"], :high=>"Q"}, :loser=>{:high=>"8"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:pair=>["6"], :high=>"Q"}}
+{:winner=>{:two_pair=>["6", "8"], :high=>"4"}, :loser=>{:high=>"Q"}}
+{:winner=>{:three=>["9"], :high=>"A"}, :loser=>{:pair=>["8"], :high=>"T"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["7"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["3"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["5"], :high=>"J"}, :loser=>{:pair=>["5"], :high=>"7"}}
+{:winner=>{:pair=>["J"], :high=>"8"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"6"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["9"], :high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["5"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["9", "T"], :high=>"Q"}, :loser=>{:pair=>["K"], :high=>"9"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["J"], :high=>"K"}, :loser=>{:pair=>["3"], :high=>"K"}}
+{:winner=>{:two_pair=>["8", "9"], :high=>"J"}, :loser=>{:pair=>["Q"], :high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"Q"}, :loser=>{:pair=>["5"], :high=>"J"}}
+{:winner=>{:two_pair=>["2", "T"], :high=>"6"}, :loser=>{:pair=>["8"], :high=>"A"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["6"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"7"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["T"], :high=>"J"}, :loser=>{:pair=>["8"], :high=>"Q"}}
+{:winner=>{:pair=>["8"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"8"}, :loser=>{:pair=>["Q"], :high=>"J"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:three=>["3"], :high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:pair=>["8"], :high=>"J"}}
+{:winner=>{:two_pair=>["9", "8"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["3"], :high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:pair=>["5"], :high=>"Q"}}
+{:winner=>{:pair=>["3"], :high=>"J"}, :loser=>{:high=>"T"}}
+{:winner=>{:three=>["3"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["3"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:high=>"9"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:pair=>["8"], :high=>"T"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["2"], :high=>"J"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["7"], :high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["7"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["J", "6"], :high=>"4"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["K", "5"], :high=>"3"}, :loser=>{:pair=>["7"], :high=>"A"}}
+{:winner=>{:pair=>["6"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["6"], :high=>"8"}, :loser=>{:pair=>["4"], :high=>"T"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:flush=>["2", "4", "6", "8", "K"]}, :loser=>{:pair=>["6"], :high=>"T"}}
+{:winner=>{:pair=>["K"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["7", "5"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["2"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"7"}, :loser=>{:pair=>["5"], :high=>"8"}}
+{:winner=>{:pair=>["K"], :high=>"7"}, :loser=>{:pair=>["8"], :high=>"6"}}
+{:winner=>{:pair=>["7"], :high=>"T"}, :loser=>{:pair=>["3"], :high=>"J"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"K"}, :loser=>{:pair=>["6"], :high=>"7"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:pair=>["3"], :high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:pair=>["5"], :high=>"9"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:three=>["2"], :high=>"K"}, :loser=>{:pair=>["4"], :high=>"8"}}
+{:winner=>{:pair=>["J"], :high=>"K"}, :loser=>{:pair=>["T"], :high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"9"}, :loser=>{:pair=>["8"], :high=>"9"}}
+{:winner=>{:pair=>["3"], :high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["J"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["5"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["9", "K"], :high=>"5"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:two_pair=>["6", "5"], :high=>"4"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:three=>["A"], :high=>"8"}, :loser=>{:pair=>["8"], :high=>"6"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["6", "5"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:pair=>["5"], :high=>"T"}}
+{:winner=>{:two_pair=>["9", "4"], :high=>"6"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:three=>["A"], :high=>"6"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["5", "4"], :high=>"8"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["8"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["A", "2"], :high=>"3"}, :loser=>{:pair=>["7"], :high=>"J"}}
+{:winner=>{:pair=>["9"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["2"], :high=>"T"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["7"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["T"], :high=>"8"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["T"], :high=>"8"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:pair=>["8"], :high=>"T"}}
+{:winner=>{:pair=>["T"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:two_pair=>["8", "6"], :high=>"J"}, :loser=>{:pair=>["5"], :high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["9"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["A", "5"], :high=>"2"}, :loser=>{:pair=>["J"], :high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"8"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"7"}, :loser=>{:pair=>["K"], :high=>"Q"}}
+{:winner=>{:pair=>["J"], :high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:three=>["A"], :high=>"5"}, :loser=>{:pair=>["T"], :high=>"8"}}
+{:winner=>{:two_pair=>["4", "7"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["3"], :high=>"7"}, :loser=>{:high=>"K"}}
+{:winner=>{:three=>["3"], :high=>"6"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["6"], :high=>"T"}, :loser=>{:pair=>["2"], :high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["4"], :high=>"8"}, :loser=>{:high=>"9"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["K"], :high=>"6"}, :loser=>{:pair=>["3"], :high=>"T"}}
+{:winner=>{:pair=>["8"], :high=>"6"}, :loser=>{:pair=>["3"], :high=>"K"}}
+{:winner=>{:two_pair=>["6", "Q"], :high=>"T"}, :loser=>{:pair=>["7"], :high=>"9"}}
+{:winner=>{:pair=>["T"], :high=>"J"}, :loser=>{:pair=>["6"], :high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["8"], :high=>"7"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"7"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:pair=>["3"], :high=>"K"}}
+{:winner=>{:pair=>["8"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["7"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["3"], :high=>"T"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["J"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["9"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:pair=>["8"], :high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"9"}, :loser=>{:high=>"Q"}}
+{:winner=>{:three=>["Q"], :high=>"9"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["6", "3"], :high=>"5"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["3"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["3"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:pair=>["K"], :high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"9"}, :loser=>{:pair=>["7"], :high=>"6"}}
+{:winner=>{:pair=>["A"], :high=>"9"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"7"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["5", "9"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:three=>["J"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:three=>["A"], :high=>"9"}, :loser=>{:pair=>["4"], :high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:pair=>["T"], :high=>"K"}}
+{:winner=>{:pair=>["3"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["6"], :high=>"T"}, :loser=>{:pair=>["4"], :high=>"9"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["Q", "T"], :high=>"3"}, :loser=>{:pair=>["7"], :high=>"T"}}
+{:winner=>{:two_pair=>["7", "A"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["7"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["2"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["Q", "2"], :high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["8"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:pair=>["7"], :high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"7"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["6"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["7"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["4"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"9"}, :loser=>{:pair=>["J"], :high=>"T"}}
+{:winner=>{:two_pair=>["6", "5"], :high=>"T"}, :loser=>{:pair=>["Q"], :high=>"9"}}
+{:winner=>{:pair=>["7"], :high=>"K"}, :loser=>{:high=>"8"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:pair=>["7"], :high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["K"], :high=>"J"}, :loser=>{:pair=>["T"], :high=>"7"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:straight=>["6", "7", "8", "9", "T"]}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["7"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["4", "T"], :high=>"3"}, :loser=>{:pair=>["6"], :high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["3"], :high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"9"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["4"], :high=>"Q"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["K"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["T", "6"], :high=>"Q"}, :loser=>{:pair=>["5"], :high=>"T"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:pair=>["4"], :high=>"K"}}
+{:winner=>{:fullhouse=>["6", "K"]}, :loser=>{:pair=>["J"], :high=>"8"}}
+{:winner=>{:pair=>["6"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:straight=>["7", "8", "9", "T", "J"]}, :loser=>{:pair=>["5"], :high=>"9"}}
+{:winner=>{:three=>["8"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["7"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["3"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["3"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"7"}, :loser=>{:pair=>["5"], :high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:pair=>["4"], :high=>"7"}}
+{:winner=>{:pair=>["5"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["4"], :high=>"9"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["5"], :high=>"Q"}, :loser=>{:pair=>["2"], :high=>"J"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["8"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["2"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"K"}, :loser=>{:pair=>["5"], :high=>"Q"}}
+{:winner=>{:pair=>["T"], :high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:pair=>["2"], :high=>"Q"}}
+{:winner=>{:pair=>["K"], :high=>"8"}, :loser=>{:pair=>["Q"], :high=>"T"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"7"}, :loser=>{:pair=>["3"], :high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"9"}, :loser=>{:pair=>["2"], :high=>"8"}}
+{:winner=>{:pair=>["T"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["Q", "7"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["3", "Q"], :high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["7"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:pair=>["7"], :high=>"K"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["6"], :high=>"8"}, :loser=>{:pair=>["5"], :high=>"T"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:two_pair=>["8", "T"], :high=>"5"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["7", "T"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["2", "5"], :high=>"4"}, :loser=>{:pair=>["6"], :high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:three=>["T"], :high=>"7"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["7"], :high=>"5"}, :loser=>{:pair=>["3"], :high=>"J"}}
+{:winner=>{:pair=>["3"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["7"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"4"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"9"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["6"], :high=>"T"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:high=>"9"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["3"], :high=>"7"}, :loser=>{:high=>"A"}}
+{:winner=>{:three=>["9"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["4"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["2", "J"], :high=>"5"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"6"}, :loser=>{:pair=>["3"], :high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:pair=>["8"], :high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["T"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:pair=>["4"], :high=>"Q"}}
+{:winner=>{:pair=>["T"], :high=>"9"}, :loser=>{:high=>"K"}}
+{:winner=>{:straight=>["T", "J", "Q", "K", "A"]}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:high=>"T"}}
+{:winner=>{:two_pair=>["8", "K"], :high=>"5"}, :loser=>{:high=>"A"}}
+{:winner=>{:straight=>["5", "6", "7", "8", "9"]}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"A"}, :loser=>{:pair=>["3"], :high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"K"}, :loser=>{:pair=>["4"], :high=>"K"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:pair=>["2"], :high=>"9"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:pair=>["2"], :high=>"T"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["8"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["7"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:pair=>["2"], :high=>"7"}}
+{:winner=>{:pair=>["6"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["7", "4"], :high=>"2"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["7", "T"], :high=>"5"}, :loser=>{:pair=>["9"], :high=>"K"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:pair=>["T"], :high=>"Q"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"T"}}
+{:winner=>{:straight=>["2", "3", "4", "5", "6"]}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["5"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["7"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["7", "2"], :high=>"9"}, :loser=>{:pair=>["J"], :high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"8"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["7", "6"], :high=>"2"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:pair=>["7"], :high=>"J"}}
+{:winner=>{:three=>["K"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["7"], :high=>"T"}, :loser=>{:pair=>["3"], :high=>"8"}}
+{:winner=>{:two_pair=>["J", "8"], :high=>"5"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["K", "J"], :high=>"6"}, :loser=>{:pair=>["2"], :high=>"Q"}}
+{:winner=>{:two_pair=>["Q", "7"], :high=>"T"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:pair=>["8"], :high=>"7"}}
+{:winner=>{:pair=>["6"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["7", "T"], :high=>"4"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["A"], :high=>"7"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["7"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"T"}, :loser=>{:pair=>["3"], :high=>"T"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["8", "6"], :high=>"Q"}, :loser=>{:pair=>["A"], :high=>"T"}}
+{:winner=>{:pair=>["8"], :high=>"Q"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["2"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"T"}, :loser=>{:high=>"9"}}
+{:winner=>{:flush=>["2", "4", "5", "7", "9"]}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"7"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:pair=>["3"], :high=>"J"}}
+{:winner=>{:two_pair=>["8", "6"], :high=>"9"}, :loser=>{:pair=>["T"], :high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["8", "4"], :high=>"Q"}, :loser=>{:pair=>["A"], :high=>"T"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"9"}, :loser=>{:pair=>["2"], :high=>"9"}}
+{:winner=>{:pair=>["K"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["3"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:pair=>["4"], :high=>"6"}}
+{:winner=>{:two_pair=>["2", "6"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["T", "A"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["5"], :high=>"A"}, :loser=>{:high=>"8"}}
+{:winner=>{:pair=>["8"], :high=>"6"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:straight=>["2", "3", "4", "5", "6"]}, :loser=>{:pair=>["K"], :high=>"A"}}
+{:winner=>{:pair=>["3"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:pair=>["9"], :high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:pair=>["K"], :high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"9"}, :loser=>{:pair=>["6"], :high=>"J"}}
+{:winner=>{:pair=>["K"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["Q", "2"], :high=>"8"}, :loser=>{:pair=>["K"], :high=>"9"}}
+{:winner=>{:pair=>["A"], :high=>"8"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:pair=>["5"], :high=>"T"}}
+{:winner=>{:pair=>["4"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["Q", "7"], :high=>"T"}, :loser=>{:high=>"T"}}
+{:winner=>{:two_pair=>["J", "4"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:pair=>["2"], :high=>"7"}}
+{:winner=>{:pair=>["5"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:three=>["J"], :high=>"6"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:three=>["6"], :high=>"7"}, :loser=>{:pair=>["8"], :high=>"Q"}}
+{:winner=>{:pair=>["T"], :high=>"A"}, :loser=>{:pair=>["3"], :high=>"K"}}
+{:winner=>{:pair=>["7"], :high=>"8"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:pair=>["5"], :high=>"7"}}
+{:winner=>{:pair=>["T"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["4"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:pair=>["Q"], :high=>"6"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["9", "Q"], :high=>"5"}, :loser=>{:pair=>["8"], :high=>"K"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["7"], :high=>"T"}, :loser=>{:pair=>["5"], :high=>"6"}}
+{:winner=>{:pair=>["2"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:pair=>["2"], :high=>"J"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:pair=>["6"], :high=>"Q"}}
+{:winner=>{:pair=>["7"], :high=>"9"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["6"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"9"}, :loser=>{:pair=>["8"], :high=>"T"}}
+{:winner=>{:pair=>["9"], :high=>"7"}, :loser=>{:pair=>["6"], :high=>"Q"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["J", "6"], :high=>"9"}, :loser=>{:pair=>["K"], :high=>"7"}}
+{:winner=>{:pair=>["J"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"Q"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["3"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"A"}, :loser=>{:high=>"8"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["T"], :high=>"K"}, :loser=>{:pair=>["2"], :high=>"T"}}
+{:winner=>{:pair=>["T"], :high=>"7"}, :loser=>{:high=>"K"}}
+{:winner=>{:three=>["5"], :high=>"9"}, :loser=>{:two_pair=>["K", "7"], :high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["3"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["6"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["T", "4"], :high=>"5"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["7"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:pair=>["6"], :high=>"T"}}
+{:winner=>{:pair=>["K"], :high=>"7"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["K"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:pair=>["6"], :high=>"8"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["A", "9"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:pair=>["K"], :high=>"T"}}
+{:winner=>{:pair=>["K"], :high=>"T"}, :loser=>{:pair=>["4"], :high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"7"}}
+{:winner=>{:pair=>["7"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["2", "T"], :high=>"3"}, :loser=>{:pair=>["6"], :high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:straight=>["7", "8", "9", "T", "J"]}, :loser=>{:pair=>["A"], :high=>"8"}}
+{:winner=>{:fullhouse=>["T", "K"]}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["7"], :high=>"9"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["T"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:pair=>["7"], :high=>"T"}}
+{:winner=>{:pair=>["6"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"J"}, :loser=>{:pair=>["8"], :high=>"9"}}
+{:winner=>{:pair=>["2"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["8", "4"], :high=>"2"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:three=>["3"], :high=>"Q"}, :loser=>{:pair=>["Q"], :high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["A"], :high=>"5"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["T"], :high=>"J"}, :loser=>{:pair=>["3"], :high=>"K"}}
+{:winner=>{:pair=>["4"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["7"], :high=>"K"}, :loser=>{:pair=>["5"], :high=>"J"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["6", "5"], :high=>"7"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["2"], :high=>"K"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["4"], :high=>"8"}, :loser=>{:pair=>["3"], :high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"8"}, :loser=>{:pair=>["8"], :high=>"J"}}
+{:winner=>{:pair=>["Q"], :high=>"7"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["J"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:straight=>["2", "3", "4", "5", "6"]}, :loser=>{:pair=>["3"], :high=>"Q"}}
+{:winner=>{:pair=>["6"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:pair=>["7"], :high=>"J"}}
+{:winner=>{:pair=>["8"], :high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["9", "8"], :high=>"7"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["8", "3"], :high=>"7"}, :loser=>{:pair=>["4"], :high=>"T"}}
+{:winner=>{:pair=>["2"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"7"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["2"], :high=>"T"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["4", "5"], :high=>"J"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"7"}}
+{:winner=>{:pair=>["Q"], :high=>"7"}, :loser=>{:pair=>["T"], :high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"J"}, :loser=>{:pair=>["3"], :high=>"T"}}
+{:winner=>{:pair=>["3"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["6", "8"], :high=>"2"}, :loser=>{:pair=>["2"], :high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["K"], :high=>"9"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["6"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:pair=>["4"], :high=>"9"}}
+{:winner=>{:pair=>["4"], :high=>"9"}, :loser=>{:pair=>["2"], :high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["Q"], :high=>"9"}, :loser=>{:pair=>["2"], :high=>"K"}}
+{:winner=>{:three=>["J"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:three=>["2"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["3", "T"], :high=>"6"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"9"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["K"], :high=>"J"}, :loser=>{:pair=>["3"], :high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["8"], :high=>"A"}, :loser=>{:pair=>["6"], :high=>"J"}}
+{:winner=>{:pair=>["T"], :high=>"A"}, :loser=>{:pair=>["2"], :high=>"9"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"4"}, :loser=>{:pair=>["5"], :high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"9"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["4"], :high=>"Q"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"8"}}
+{:winner=>{:pair=>["4"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["7"], :high=>"T"}, :loser=>{:pair=>["4"], :high=>"6"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["7"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["Q", "2"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["3"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:straight=>["9", "T", "J", "Q", "K"]}, :loser=>{:pair=>["8"], :high=>"K"}}
+{:winner=>{:two_pair=>["8", "A"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"7"}, :loser=>{:pair=>["3"], :high=>"9"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"J"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"J"}, :loser=>{:pair=>["7"], :high=>"T"}}
+{:winner=>{:pair=>["4"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["2", "A"], :high=>"5"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"J"}, :loser=>{:pair=>["2"], :high=>"J"}}
+{:winner=>{:pair=>["5"], :high=>"8"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["5"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["7"], :high=>"T"}, :loser=>{:high=>"8"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["7"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["7", "Q"], :high=>"6"}, :loser=>{:pair=>["2"], :high=>"J"}}
+{:winner=>{:three=>["2"], :high=>"Q"}, :loser=>{:pair=>["J"], :high=>"9"}}
+{:winner=>{:pair=>["7"], :high=>"9"}, :loser=>{:pair=>["6"], :high=>"J"}}
+{:winner=>{:pair=>["K"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"9"}}
+{:winner=>{:two_pair=>["4", "K"], :high=>"9"}, :loser=>{:pair=>["5"], :high=>"A"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["Q"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:pair=>["3"], :high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:three=>["3"], :high=>"J"}, :loser=>{:pair=>["6"], :high=>"8"}}
+{:winner=>{:two_pair=>["4", "8"], :high=>"2"}, :loser=>{:pair=>["9"], :high=>"T"}}
+{:winner=>{:pair=>["9"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:high=>"8"}}
+{:winner=>{:pair=>["3"], :high=>"7"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["3"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["9", "4"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["J"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"A"}, :loser=>{:pair=>["2"], :high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:pair=>["8"], :high=>"T"}}
+{:winner=>{:pair=>["K"], :high=>"Q"}, :loser=>{:pair=>["J"], :high=>"T"}}
+{:winner=>{:pair=>["J"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["3"], :high=>"6"}, :loser=>{:pair=>["2"], :high=>"T"}}
+{:winner=>{:two_pair=>["2", "6"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["2"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["9", "6"], :high=>"4"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:three=>["J"], :high=>"7"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["7"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:pair=>["5"], :high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:pair=>["3"], :high=>"6"}}
+{:winner=>{:pair=>["4"], :high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["7"], :high=>"9"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["2"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["4"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:three=>["Q"], :high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:three=>["8"], :high=>"K"}, :loser=>{:pair=>["3"], :high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:three=>["6"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"8"}, :loser=>{:high=>"9"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:three=>["8"], :high=>"K"}, :loser=>{:pair=>["5"], :high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["8", "J"], :high=>"7"}, :loser=>{:pair=>["4"], :high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"8"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["K"], :high=>"Q"}, :loser=>{:pair=>["J"], :high=>"T"}}
+{:winner=>{:pair=>["8"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["Q", "3"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["Q"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["2"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["2"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"5"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["7"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["6"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"9"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["7"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["4", "3"], :high=>"Q"}, :loser=>{:pair=>["7"], :high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["7"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"8"}, :loser=>{:high=>"K"}}
+{:winner=>{:three=>["9"], :high=>"K"}, :loser=>{:pair=>["Q"], :high=>"9"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["Q", "2"], :high=>"9"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["T"], :high=>"J"}, :loser=>{:pair=>["7"], :high=>"9"}}
+{:winner=>{:high=>"T"}, :loser=>{:high=>"8"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:straight=>["3", "4", "5", "6", "7"]}, :loser=>{:three=>["2"], :high=>"8"}}
+{:winner=>{:three=>["K"], :high=>"Q"}, :loser=>{:pair=>["T"], :high=>"Q"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:pair=>["3"], :high=>"9"}}
+{:winner=>{:pair=>["6"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["9", "J"], :high=>"A"}, :loser=>{:pair=>["8"], :high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["J", "A"], :high=>"5"}, :loser=>{:pair=>["9"], :high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["J"], :high=>"9"}, :loser=>{:pair=>["9"], :high=>"8"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:pair=>["5"], :high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["3", "9"], :high=>"5"}, :loser=>{:pair=>["T"], :high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"8"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["3"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["7"], :high=>"J"}, :loser=>{:pair=>["3"], :high=>"A"}}
+{:winner=>{:two_pair=>["4", "2"], :high=>"8"}, :loser=>{:pair=>["Q"], :high=>"K"}}
+{:winner=>{:two_pair=>["3", "Q"], :high=>"6"}, :loser=>{:pair=>["2"], :high=>"9"}}
+{:winner=>{:pair=>["2"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"J"}, :loser=>{:high=>"9"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"7"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["8"], :high=>"K"}, :loser=>{:pair=>["6"], :high=>"Q"}}
+{:winner=>{:pair=>["J"], :high=>"8"}, :loser=>{:pair=>["6"], :high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"8"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["2"], :high=>"Q"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["Q", "8"], :high=>"T"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["9"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:pair=>["8"], :high=>"K"}}
+{:winner=>{:two_pair=>["8", "9"], :high=>"3"}, :loser=>{:pair=>["J"], :high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:pair=>["4"], :high=>"8"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"8"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["2"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"7"}, :loser=>{:pair=>["Q"], :high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"A"}, :loser=>{:pair=>["2"], :high=>"T"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["2"], :high=>"Q"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:two_pair=>["8", "T"], :high=>"7"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"J"}, :loser=>{:pair=>["5"], :high=>"Q"}}
+{:winner=>{:two_pair=>["4", "9"], :high=>"Q"}, :loser=>{:pair=>["Q"], :high=>"T"}}
+{:winner=>{:pair=>["J"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["K"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["5"], :high=>"8"}, :loser=>{:pair=>["3"], :high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:pair=>["6"], :high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["7"], :high=>"T"}, :loser=>{:pair=>["2"], :high=>"J"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"9"}, :loser=>{:pair=>["8"], :high=>"T"}}
+{:winner=>{:pair=>["A"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:pair=>["2"], :high=>"T"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:three=>["J"], :high=>"6"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:pair=>["3"], :high=>"J"}}
+{:winner=>{:straight=>["2", "3", "4", "5", "6"]}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["7"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["7"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:pair=>["2"], :high=>"8"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["9"], :high=>"8"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["3"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["4"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["2"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["A", "6"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["3"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["7"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["4"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"K"}, :loser=>{:pair=>["7"], :high=>"Q"}}
+{:winner=>{:pair=>["6"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:pair=>["J"], :high=>"7"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:pair=>["8"], :high=>"7"}}
+{:winner=>{:pair=>["7"], :high=>"9"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"9"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["T", "K"], :high=>"3"}, :loser=>{:high=>"T"}}
+{:winner=>{:two_pair=>["9", "2"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["6"], :high=>"T"}, :loser=>{:pair=>["3"], :high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:pair=>["3"], :high=>"J"}}
+{:winner=>{:three=>["3"], :high=>"6"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"A"}, :loser=>{:pair=>["3"], :high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["T", "9"], :high=>"8"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"6"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:three=>["K"], :high=>"7"}, :loser=>{:pair=>["4"], :high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["8"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["K"], :high=>"8"}, :loser=>{:pair=>["T"], :high=>"J"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"9"}, :loser=>{:pair=>["2"], :high=>"K"}}
+{:winner=>{:pair=>["8"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["2"], :high=>"7"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["6"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"8"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:pair=>["3"], :high=>"9"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["A"], :high=>"9"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["8", "K"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["T"], :high=>"7"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["6", "T"], :high=>"7"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["8"], :high=>"T"}, :loser=>{:pair=>["6"], :high=>"Q"}}
+{:winner=>{:pair=>["A"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:pair=>["2"], :high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["K", "9"], :high=>"2"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["2"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["8"], :high=>"9"}, :loser=>{:pair=>["7"], :high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"5"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"J"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["4"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["3"], :high=>"9"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["9"], :high=>"Q"}, :loser=>{:pair=>["2"], :high=>"Q"}}
+{:winner=>{:pair=>["4"], :high=>"T"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["5", "Q"], :high=>"T"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["4", "T"], :high=>"6"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"T"}, :loser=>{:high=>"9"}}
+{:winner=>{:pair=>["T"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["5"], :high=>"T"}, :loser=>{:pair=>["3"], :high=>"8"}}
+{:winner=>{:pair=>["K"], :high=>"9"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["7"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["4"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["2", "9"], :high=>"3"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:pair=>["5"], :high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["4"], :high=>"9"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["9"], :high=>"8"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["9"], :high=>"T"}, :loser=>{:pair=>["5"], :high=>"K"}}
+{:winner=>{:pair=>["5"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["5"], :high=>"J"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"J"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["5"], :high=>"8"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["2"], :high=>"6"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["6"], :high=>"T"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["K", "J"], :high=>"3"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["K"], :high=>"Q"}, :loser=>{:pair=>["9"], :high=>"7"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["K"], :high=>"J"}, :loser=>{:high=>"8"}}
+{:winner=>{:pair=>["8"], :high=>"7"}, :loser=>{:pair=>["4"], :high=>"9"}}
+{:winner=>{:pair=>["7"], :high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["A"], :high=>"J"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"K"}, :loser=>{:pair=>["5"], :high=>"K"}}
+{:winner=>{:pair=>["3"], :high=>"T"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["K"], :high=>"A"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"Q"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:three=>["J"], :high=>"K"}, :loser=>{:pair=>["A"], :high=>"Q"}}
+{:winner=>{:high=>"T"}, :loser=>{:high=>"7"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:two_pair=>["6", "T"], :high=>"Q"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["6"], :high=>"8"}, :loser=>{:high=>"T"}}
+{:winner=>{:two_pair=>["9", "J"], :high=>"3"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}
+{:winner=>{:pair=>["Q"], :high=>"T"}, :loser=>{:pair=>["4"], :high=>"J"}}
+{:winner=>{:pair=>["K"], :high=>"Q"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["8"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["T", "Q"], :high=>"3"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["5"], :high=>"K"}, :loser=>{:pair=>["4"], :high=>"Q"}}
+{:winner=>{:two_pair=>["6", "T"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"K"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["Q"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"T"}}
+{:winner=>{:pair=>["6"], :high=>"K"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["T"], :high=>"J"}, :loser=>{:high=>"K"}}
+{:winner=>{:three=>["T"], :high=>"Q"}, :loser=>{:high=>"K"}}
+{:winner=>{:two_pair=>["Q", "A"], :high=>"4"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["A"], :high=>"K"}, :loser=>{:high=>"Q"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"K"}}
+{:winner=>{:pair=>["J"], :high=>"K"}, :loser=>{:high=>"A"}}
+{:winner=>{:pair=>["J"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:two_pair=>["6", "3"], :high=>"J"}, :loser=>{:high=>"J"}}
+{:winner=>{:pair=>["K"], :high=>"Q"}, :loser=>{:high=>"A"}}
+{:winner=>{:high=>"A"}, :loser=>{:high=>"Q"}}

@@ -3,51 +3,7 @@
 # What is the 10 001st prime number?
 
 class Primes
-  def nth_prime(input)
-    start = Time.now
-    n = 0
-    primes = []
-    until input <= primes.length
-      n += 1
-      is_prime = true
-      if n == 1
-        is_prime = false
-        next
-      end
-
-      if n == 2
-        is_prime = true
-        primes.push(n)
-        next
-      elsif n.even?
-        is_prime = false
-        next
-      end
-
-      for i in 2..Math.sqrt(n)
-        if n % i == 0
-            is_prime = false
-        end
-      end
-
-      if is_prime == true
-        # break if count == input
-        primes.push(n)
-      end
-      # count += 1
-    end
-    finish = Time.now
-    puts "Calculation took #{finish - start} seconds"
-    return primes[input-1]
-  end
-
-
-  #############################################################
-  ###################### ANOTHER METHOD #######################
-  #############################################################
-
-
-    def nth_primeO(input)
+    def nth_prime
       start = Time.now
       n = 0
       count = 0
@@ -57,7 +13,7 @@ class Primes
 
         if n == 2
           count += 1
-          break if count == input
+          break if count == self
           next
         end
 
@@ -72,10 +28,50 @@ class Primes
         next if is_prime == false
 
         count += 1
-        break if count == input
+        break if count == self
       end
       finish = Time.now
       puts "Calculation took #{finish - start} seconds"
       return n
     end
+
+#########################################################
+#########################################################
+
+    def nth_prime0(input)
+      start = Time.now
+      n = 0
+      primes = []
+      until primes.length == input
+        n += 1
+        is_prime = true
+        if n == 1
+          is_prime = false
+          next
+        end
+
+        if n == 2
+          is_prime = true
+          primes.push(n)
+          next
+        elsif n.even?
+          is_prime = false
+          next
+        end
+
+        for i in 2..Math.sqrt(n)
+          if n % i == 0
+              is_prime = false
+          end
+        end
+
+        if is_prime == true
+          primes << n
+        end
+      end
+      finish = Time.now
+      puts "Calculation took #{finish - start} seconds"
+      return primes[-1]
+    end
+
 end

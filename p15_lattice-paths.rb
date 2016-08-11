@@ -17,6 +17,6 @@ end
 
 def routes(n)
   x = factorial(n*2) / (factorial(n) * factorial(n))
-  puts "Starting in the top left corner only being able to move to the right and down, a #{n} by #{n} grid has #{x} routes."
+  puts "Starting in the top left corner only being able to move to the right and down, a #{n}x#{n} grid has #{x} routes."
   return x
 end

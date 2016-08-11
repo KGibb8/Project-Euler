@@ -24,16 +24,8 @@
 # Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
 require './file-reader'
-
-class Array
-  def product
-    inject { |sum, x| sum * x }
-  end
-
-  def map_to_i
-    self.map {|i| i.to_i}
-  end
-end
+require './objects/array'
+require './objects/string'
 
 class Calculator
   attr_reader :products, :data
@@ -43,11 +35,11 @@ class Calculator
   end
 
   def find_data(file)
-    file.string  # PROBLEM IS HERE
+    file.string
   end
 
   def to_i_array
-    @data.scan(/./).map_to_i
+    @data.map_to_i
   end
 
   def find_products
@@ -56,8 +48,7 @@ class Calculator
     b = 13
     until b >= 1000
       thirteen = integers[a-1..b-1]
-      product = thirteen.product
-      @products << product
+      @products << thirteen.product
       a += 1
       b += 1
     end
@@ -68,27 +59,3 @@ class Calculator
 end
 
 puts Calculator.new(FileReader.new('p008_number.txt')).find_products
-
-
-###############################################
-###############################################
-=begin
-
-Dir.chdir(File.dirname(__FILE__))
-file = FileReader.new('p008_number.txt')
-integers = file.contents.scan(/./).map {|i| i.to_i}
-
-products = []
-a = 1
-b = 13
-until b >= 1000
-  thirteen = integers[a-1..b-1]
-  product = thirteen.product
-  products.push(product)
-  a += 1
-  b += 1
-end
-
-products.sort!
-puts products[-1]
-=end

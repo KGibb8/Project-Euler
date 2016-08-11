@@ -14,6 +14,7 @@
 
 require './file-reader'
 require './colours'
+require './objects/string'
 
 class Fixnum
   def triangular?
@@ -21,13 +22,13 @@ class Fixnum
     Math.sqrt(num_to_check) % 1 == 0 ? true : false
   end
 end
-
+=begin
 class String
   def score
     self.ord - 64
   end
 end
-
+=end
 class UI
   def self.question
     puts "Project Euler: Problem 42 - Coded Triangle Numbers\n".bold

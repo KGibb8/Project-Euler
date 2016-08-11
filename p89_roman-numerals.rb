@@ -28,24 +28,95 @@
 
 ############### SOLVE PROBLEM HERE ##################
 
+require './file-reader'
 
-Dir.chdir(File.dirname(__FILE__))
+# CURRENTLY INCORRECT ANSWER - DIFF IS TOO HIGH
 
-def gets_numerals(filename)
-  open filename do |file|
-    while line = file.gets
-      string = line.split
-    end
-    string
+class Numeral
+  attr_reader :numeral, :true_numeral, :split_numeral, :split_true_numeral, :numeral_count, :true_numeral_count
+  def initialize(numeral)
+    @numeral = numeral
+    @split_numeral = numeral.scan(/./)
+    @numeral_count = count_characters(@split_numeral)
+    @true_numeral = consolidate(numeral)
+    @split_true_numeral = @true_numeral.scan(/./)
+    @true_numeral_count = count_characters(@split_true_numeral)
+  end
+
+  def consolidate(numeral)
+    if numeral.include? "MMMM" then numeral = numeral.sub("MMMM", "IV") end
+    if numeral.include? "DCCCC" then numeral = numeral.sub("DCCCC", "CM") end
+    if numeral.include? "CCCC" then numeral = numeral.sub("CCCC", "CD") end
+    if numeral.include? "LXXXX" then numeral = numeral.sub("LXXXX", "XC") end
+    if numeral.include? "XXXX" then numeral = numeral.sub("XXXX", "XL") end
+    if numeral.include? "VIIII" then numeral = numeral.sub("VIIII", "IX") end
+    if numeral.include? "IIII" then numeral = numeral.sub("IIII", "IV") end
+    return numeral
+  end
+
+  def count_characters(split_numeral)
+    split_numeral.size
+  end
+
+  def count_diff
+    @numeral_count - @true_numeral_count
   end
 end
 
-numerals = gets_numerals("p089_roman.txt")
+sum = Proc.new {|sum, item| sum += item}
+
+string_numerals = FileReader.new('p089_roman.txt').lines
+start = Time.now
+numerals = string_numerals.collect {|numeral| Numeral.new(numeral)}
+difference = numerals.collect {|x| x.count_diff}.inject(&sum)
+finish = Time.now
+
+puts "Calculation took #{(finish - start)*1000} ms."
+puts "Difference is #{difference}."
 
 
 
+###################################################
+###################################################
 
+# CORRECT ANSWER
 
+require './file-reader'
+
+numerals = FileReader.new('p089_roman.txt').lines
+
+array_scan = Proc.new {|item| item.scan(/./)}
+sum = Proc.new {|sum, item| sum += item}
+
+start = Time.now
+split_numerals = numerals.collect(&array_scan)
+num_of_chars_before = split_numerals.collect(&:count).inject(&sum)
+
+# I can only be placed before V and X --> IIII == IV && VIIII == IX
+# X can only be placed before L and C --> XXXX == XL && LXXXX == XC
+# C can only be placed before D and M --> CCCC == CD && DCCCC == CM
+
+# patterns_to_find = ["IIII", "VIIII", "XXXX", "LXXXX", "CCCC", "DCCCC"]
+
+def consolidate_numerals
+  # if self.include? "MMMM" then self.sub!("MMMM", "IV") end  THIS IS TECHNICALLY TRUE BUT NOT RELEVANT TO THE QUESTION
+  if self.include? "DCCCC" then self.sub!("DCCCC", "CM") end
+  if self.include? "CCCC" then self.sub!("CCCC", "CD") end
+  if self.include? "LXXXX" then self.sub!("LXXXX", "XC") end
+  if self.include? "XXXX" then self.sub!("XXXX", "XL") end
+  if self.include? "VIIII" then self.sub!("VIIII", "IX") end
+  if self.include? "IIII" then self.sub!("IIII", "IV") end
+  return self
+end
+
+numerals.each {|numeral| numeral.consolidate_numerals}
+
+split_numerals = numerals.collect(&array_scan)
+num_of_chars_after = split_numerals.collect(&count_items).inject(&sum)
+finish = Time.now
+
+puts "Calculation took #{(finish - start)*1000} ms."
+puts "Difference is #{num_of_chars_before - num_of_chars_after}."
 
 
 ######################################################
