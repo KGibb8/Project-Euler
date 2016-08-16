@@ -252,7 +252,7 @@ end
 #### GAME BEGINS HERE ####
 
 
-require './file-reader'
+require './objects/file-reader'
 
 hands = FileReader.new('p054_poker.txt').poker
 

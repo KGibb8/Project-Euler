@@ -12,8 +12,8 @@
 # Using words.txt (right click and 'Save Link/Target As...'), a 16K text file
 # containing nearly two-thousand common English words, how many are triangle words?
 
-require './file-reader'
-require './colours'
+require './objects/file-reader'
+require './objects/colours'
 require './objects/string'
 
 class Fixnum

@@ -5,7 +5,7 @@
 
 # How many circular primes are there below one million?
 
-require './colours'
+require './objects/colours'
 
 class UI
   def self.title

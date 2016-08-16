@@ -28,7 +28,7 @@
 
 ############### SOLVE PROBLEM HERE ##################
 
-require './file-reader'
+require './objects/file-reader'
 
 # CURRENTLY INCORRECT ANSWER - DIFF IS TOO HIGH
 

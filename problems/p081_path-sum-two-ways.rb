@@ -11,7 +11,7 @@
 # a 31K text file containing a 80 by 80 matrix, from the top left to the bottom right
 # by only moving right and down.
 
-require './file-reader'
+require './objects/file-reader'
 
 grid = FileReader.new('p081_matrix.txt').i_array
 

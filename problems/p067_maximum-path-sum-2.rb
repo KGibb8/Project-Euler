@@ -12,7 +12,7 @@
 # 'Save Link/Target As...'), a 15K text file containing a triangle with
 # one-hundred rows.
 
-require './file-reader'
+require './objects/file-reader'
 
 puts "File executed..."
 

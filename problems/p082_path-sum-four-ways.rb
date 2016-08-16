@@ -13,6 +13,6 @@
 # right by moving left, right, up, and down.
 
 
-require './file-reader'
+require './objects/file-reader'
 
 grid = FileReader.new('p081_matrix.txt').i_array

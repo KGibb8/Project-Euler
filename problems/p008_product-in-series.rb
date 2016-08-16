@@ -23,7 +23,7 @@
 
 # Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
-require './file-reader'
+require './objects/file-reader'
 require './objects/array'
 require './objects/string'
 
