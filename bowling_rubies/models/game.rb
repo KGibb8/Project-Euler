@@ -11,9 +11,9 @@ class Game < ApplicationRecord
     @players = []
   end
 
-  def start!
-    generate_players!
-    setup_scoreboard!
+  def begin
+    generate_players
+    setup_scoreboard
 
     10.times do |turn|
       players.each do |player|
@@ -46,13 +46,13 @@ class Game < ApplicationRecord
     names.count
   end
 
-  def generate_players!
+  def generate_players
     names.each do |name|
       @players << Player.new(name)
     end
   end
 
-  def setup_scoreboard!
+  def setup_scoreboard
     @scoreboard = Scoreboard.new(@players)
     @scoreboard.setup
   end

@@ -7,9 +7,23 @@ require './models/scoreboard'
 require './models/turn'
 require './models/game'
 
-Game.new([
-  "Kieran",
-  "Pezz",
-  "Amanda",
-  "Dan Hayes"
-]).start!
+Config = Class.new
+
+class Application
+  attr_accessor :config
+
+  def initialize(config = Config.new)
+    @config = config
+  end
+
+  def start
+    Game.new([
+      "Kieran",
+      "Pezz",
+      "Amanda",
+      "Dan Hayes"
+    ]).begin
+  end
+end
+
+App.new.start
