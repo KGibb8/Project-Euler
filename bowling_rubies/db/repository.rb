@@ -20,6 +20,11 @@ module Repository
     self.class.store(self)
   end
 
+  def valid?
+    self.class.run_validations(self)
+    self.errors.any?
+  end
+
   def attributes
     {} # TODO
   end
@@ -28,27 +33,22 @@ module Repository
 
     attr_accessor :persistence_strategy
 
-    [:save, :create].each do |action|
+    [:save, :create, :validation].each do |action|
       [:before, :after].each do |prefix|
-        define_method "#{prefix}_#{action}".to_sym do |method|
+        define_method "#{prefix}_#{action}".to_sym do |method, options, &block|
           variable_name = "@#{prefix}_#{action}_callbacks"
           callbacks = instance_variable_get(variable_name)
           callbacks = instance_variable_set(variable_name, []) unless callbacks
           callbacks << method
+          # callbacks << { method: method, options: options, block: &block }
         end
       end
     end
 
-    entry_accessors = [:first, :second, :third, :fourth, :fifth, :sixth]
-    entry_accessors.each_with_index do |method, i|
-      define_method method do
-        entries[i]
-      end
-    end
-
-    def new(*args)
+    def new(params)
       @before_initialize_callbacks ||= []
-      entry = super(*args)
+      params.merge(errors: [])
+      entry = super(params)
       @after_initialize_callbacks ||= []
       entry
     end
@@ -62,11 +62,9 @@ module Repository
     end
 
     def where(params)
-      entries.inject([]) do |collection, entry|
-        matched = params.select { |k, v| entry.send(k) == v }
-        binding.pry
-        collection << entry if matched.count == params.keys.count
-        collection
+      entries.select do |entry|
+        matched = params.selet {|k, v| entry.send(k) == v }}
+        matched.count == params.keys.count
       end
     end
 
@@ -82,6 +80,8 @@ module Repository
 
     def create(params)
       entry = new(params)
+
+      # return false unless entry.valid?
 
       @before_create_callbacks ||= []
       @before_create_callbacks.each do |method|
@@ -152,6 +152,31 @@ module Repository
       end
 
       response
+    end
+
+    def validate(method, options, &block)
+      @validation_callbacks ||= []
+      @validation_callbacks << method
+    end
+
+    def run_validations(entry)
+      @before_validation_callbacks ||= []
+      @before_validation_callbacks.each do |method|
+        entry.send(method)
+      end
+
+      @validation_callbacks ||= []
+      @validation_callbacks.each do |method|
+        entry.send(method)
+      rescue ValidationError => error
+        # entry has no .errors accessor, will need one!
+        entry.errors.push([method, error.message])
+      end
+
+      @after_validation_callbacks ||= []
+      @after_validation_callbacks.each do |method|
+        entry.send(method)
+      end
     end
 
     private
