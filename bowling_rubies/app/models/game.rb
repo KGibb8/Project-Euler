@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "./application_record"
+require_relative "./application_record"
 
 class Game < ApplicationRecord
   attr_reader :players,

@@ -1,29 +1,49 @@
 # frozen_string_literal: true
 
+require './environment/development'
+require './config'
 require './db/repository'
-require './models/application_record'
-require './models/player'
-require './models/scoreboard'
-require './models/turn'
-require './models/game'
 
-Config = Class.new
+Dir["./app/models/*.rb", "./app/controllers/*.rb"].each { |file| require file }
 
-class Application
-  attr_accessor :config
+class Application < Shoes
+  include Config
 
-  def initialize(config = Config.new)
-    @config = config
+  configure do |config|
+    config.full_screen = true
   end
 
-  def start
-    Game.new([
-      "Kieran",
-      "Pezz",
-      "Amanda",
-      "Dan Hayes"
-    ]).begin
+  url "/", :home_screen # would be nice if you could pass a lambda: -> { Controllers::Home.new.index }
+  url "/settings", :settings_view
+  url "/players", :players_view
+  url "/player/:id", :player_view
+  url "/games", :games_view
+  url "/games/:id", :game_view
+
+  def home_screen
+    button "Settings" do
+      visit "/settings"
+    end
+  end
+
+  def settings_view
+  end
+
+  def games_view
+    Controllers::Games.new(params).index
+  end
+
+  def game_view
+    Controllers::Games.new(params).show
+  end
+
+  def players_view
+
+  end
+
+  def player_view
+
   end
 end
 
-App.new.start
+Shoes.app(Application.config)

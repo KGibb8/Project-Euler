@@ -63,7 +63,7 @@ module Repository
 
     def where(params)
       entries.select do |entry|
-        matched = params.selet {|k, v| entry.send(k) == v }}
+        matched = params.select {|k, v| entry.send(k) == v }
         matched.count == params.keys.count
       end
     end
@@ -167,10 +167,12 @@ module Repository
 
       @validation_callbacks ||= []
       @validation_callbacks.each do |method|
-        entry.send(method)
-      rescue ValidationError => error
-        # entry has no .errors accessor, will need one!
-        entry.errors.push([method, error.message])
+        begin
+          entry.send(method)
+        rescue ValidationError => error
+          # entry has no .errors accessor, will need one!
+          entry.errors.push([method, error.message])
+        end
       end
 
       @after_validation_callbacks ||= []
@@ -187,3 +189,4 @@ module Repository
       @entries ||= []
     end
   end
+end

@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative '../app'
+
+Pry.start rescue "Console Broke. Please investigate"
