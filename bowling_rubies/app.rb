@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require './environment/development'
+# require './environment/development'
 require './config'
 require './db/repository'
 
-Dir["./app/models/*.rb", "./app/controllers/*.rb"].each { |file| require file }
+Dir["./app/models/*.rb", "./app/controllers/*.rb", "./app/views/**/*.rb"].each { |file| require file }
 
 class Application < Shoes
   include Config
@@ -21,20 +21,18 @@ class Application < Shoes
   url "/games/:id", :game_view
 
   def home_screen
-    button "Settings" do
-      visit "/settings"
-    end
+    Controllers::Pages.new.call(:index)
   end
 
   def settings_view
   end
 
   def games_view
-    Controllers::Games.new(params).index
+    Controllers::Games.new.call(:index)
   end
 
   def game_view
-    Controllers::Games.new(params).show
+    Controllers::Games.new.call(:show)
   end
 
   def players_view

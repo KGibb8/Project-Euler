@@ -8,17 +8,18 @@ module Controllers
 
     def index
       @games = Game.all
-      Views::Games::Index.new(@games)
+      render @games, action: :index
     end
 
     def show
-      # @game = Game.find()
+      return unless @game
+      render @game, action: :show
     end
 
     private
 
     def find_game
-      # @game = Game.find_by(???)
+      @game = Game.find_by(name: 'Winninnnggg')
     end
   end
 end
