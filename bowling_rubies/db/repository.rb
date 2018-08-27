@@ -3,190 +3,241 @@
 require "yaml"
 require "csv"
 
+require './lib/callbacks'
+require './lib/validations'
+
 module Repository
   PersistenceError = Class.new(StandardError)
 
+
   def self.included(base)
+    base.include(Callbacks)
+    base.include(Validations)
     base.extend(ClassMethods)
+    base.include(InstanceMethods)
   end
 
-  def destroy
-    self.class.all.delete(self)
-    self.class.persist!
-  end
+  module InstanceMethods
+    def initialize(params = Hash.new)
+      unless params.kind_of? Hash
+        raise ArgumentError, "initialize with a hash"
+      end
 
-  def save
-    # return false if self.attributes.empty?
-    self.class.store(self)
-  end
+      params.each do |k, v|
+        instance_variable_set("@#{k}", v)
+        self.class.__send__(:attr_accessor, k.to_sym)
+      end
+    end
 
-  def valid?
-    self.class.run_validations(self)
-    self.errors.any?
-  end
+    def attributes
+      self.instance_variables.inject({}) do |hash, variable|
+        hash[variable.to_s.gsub(/@/,'').to_sym] = instance_variable_get(variable)
+        hash
+      end
+    end
 
-  def attributes
-    {} # TODO
+    def destroy
+      before_destroy_callbacks = self.class.instance_variable_get("@before_destroy_callbacks") || []
+      before_destroy_callbacks.each { |callback| callback.(self) }
+
+      index = self.class.records.index(self)
+
+      self.class.records.delete_at(index).tap do |destroyed|
+        if destroyed
+          after_destroy_callbacks = self.class.instance_variable_get("@after_destroy_callbacks") || []
+          after_destroy_callbacks.each { |callback| callback.(self) }
+          self.class.persist
+        end
+      end
+
+      self
+    end
+
+    def update(params)
+      before_update_callbacks = self.class.instance_variable_get("@before_update_callbacks") || []
+      before_update_callbacks.each { |callback| callback.(self) }
+
+      params.each do |k, v|
+        self.send("#{k.to_sym}", v)
+      end
+
+      @attributes = params
+
+      self.save
+
+      after_update_callbacks = self.class.instance_variable_get("@after_update_callbacks") || []
+      after_update_callbacks.each { |callback| callback.(self) }
+
+      self
+    end
+
+    def save
+      success = nil
+
+      before_save_callbacks = self.class.instance_variable_get("@before_save_callbacks") || []
+      before_save_callbacks.each { |callback| callback.(self) }
+
+      unless success = self.persisted?
+        self.class.records << self
+        success = self.class.persist
+      end
+
+      after_save_callbacks = self.class.instance_variable_get("@after_save_callbacks") || []
+      after_save_callbacks.each { |callback| callback.(self) } if success
+
+      success
+    end
+
+    def persisted?
+      !self.class.records.index(self).nil?
+    end
   end
 
   module ClassMethods
 
+    include Enumerable
+
     attr_accessor :persistence_strategy
 
-    [:save, :create, :validation].each do |action|
-      [:before, :after].each do |prefix|
-        define_method "#{prefix}_#{action}".to_sym do |method, options, &block|
-          variable_name = "@#{prefix}_#{action}_callbacks"
-          callbacks = instance_variable_get(variable_name)
-          callbacks = instance_variable_set(variable_name, []) unless callbacks
-          callbacks << method
-          # callbacks << { method: method, options: options, block: &block }
+    attr_writer :records
+
+    def has_many(association, options = {})
+      association_name = association.to_s
+      singularized_association_name = association_name.end_with?("s") ? association_name[0..-2] : association_name
+      association_class_name = singularized_association_name.to_s
+                                                            .split("_")
+                                                            .map(&:capitalize)
+                                                            .join
+      primary_association_name = self.name
+                                     .gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2')
+                                     .gsub(/([a-z\d])([A-Z])/,'\1_\2')
+                                     .downcase
+
+      self.__send__(:define_method, association_name) do
+        association_class = Object.const_get(association_class_name)
+        association_class.where(primary_association_name.to_sym => self)
+      end
+    end
+
+    def belongs_to(association_name, options = {})
+      association_class_name = association_name.to_s
+                                               .split("_")
+                                               .map(&:capitalize)
+                                               .join
+
+      foreign_association_name = self.name
+                                     .gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2')
+                                     .gsub(/([a-z\d])([A-Z])/,'\1_\2')
+                                     .downcase
+
+      self.__send__(:define_method, association_name) do
+        association_class = Object.const_get(association_class_name)
+        association_class.find_by(foreign_association_name => self)
+      end
+    end
+
+    def records
+      @records ||= []
+    end
+
+    def all
+      records
+    end
+
+    def each
+      if block_given?
+        self.records.each { |record| yield(record) }
+      else
+        self.records.each
+      end
+    end
+
+    def where(params)
+      response = nil
+      params.each do |record|
+        if response.nil?
+          response = records.select { |record| record.send(k) == v }
+        else
+          response = response.select { |record| record.send(k) == v }
+        end
+      end
+      response
+    end
+
+    def find_by(params)
+      where(params).first
+    end
+
+    def create(params)
+      record = new(params)
+      return record unless record.valid?
+      @before_create_callbacks ||= []
+      @before_create_callbacks.each { |callback| callback.(record) }
+      record.save
+      @after_create_callbacks ||= []
+      @after_create_callbacks.each { |callback| callback.(record) }
+      record
+    end
+
+    def update_all(params)
+      records.each { record| record.update(params) }
+    end
+
+    def destroy_all
+      records.clear
+    end
+
+    def load
+      case self.persistence_strategy
+      when :yaml
+        if File.exist? "#{self.name}.yml"
+          self.records = YAML.load_file(self.name)
+        end
+      when :csv
+        csv_info = nil
+        if File.exist? "#{self.name}.csv"
+          File.open("#{self.name}.csv", "r") { |file| csv_info = file.read  }
+
+          column_mappings = nil
+          CSV.parse(csv_info) do |row|
+            if column_mappings.nil?
+              column_mappings = row
+            else
+              params = Hash.new
+              column_mappings.each_with_index do |column, index|
+                params[column.to_sym] = row[index]
+              end
+              self.create(params)
+            end
+          end
         end
       end
     end
 
-    def new(params)
-      @before_initialize_callbacks ||= []
-      params.merge(errors: [])
-      entry = super(params)
-      @after_initialize_callbacks ||= []
-      entry
-    end
-
-    def find(id)
-      entries.each do |entry|
-        return entry if entry.id == id
-      end
-
-      nil
-    end
-
-    def where(params)
-      entries.select do |entry|
-        matched = params.select {|k, v| entry.send(k) == v }
-        matched.count == params.keys.count
-      end
-    end
-
-    def find_by(params)
-      # where(params).first
-      entries.each do |entry|
-        matched = params.select { |k, v| entry.send(k) == v }
-        return entry if matched.count == params.keys.count
-      end
-
-      nil
-    end
-
-    def create(params)
-      entry = new(params)
-
-      # return false unless entry.valid?
-
-      @before_create_callbacks ||= []
-      @before_create_callbacks.each do |method|
-        entry.send(method)
-      end
-
-      entry.save
-
-      @after_create_callbacks ||= []
-      @after_create_callbacks.each do |method|
-        entry.send(method)
-      end
-
-      entry
-    end
-
-    def all
-      entries
-    end
-
-    def load(path = "./db")
-      @path = path
-
-      case @persistence_strategy ||= :yaml
+    def persist
+      success = nil
+      case persistence_strategy ||= :yaml
       when :yaml
-        @entries = YAML.load_file(path)
+        storage = if File.exists?("#{self.name}.yml")
+                    File.open("#{self.name}.yml", "w")
+                  else
+                    File.new("#{self.name}.yml", "w")
+                  end
+
+        success = storage.write(records.to_yaml)
       when :csv
-        @entries = CSV.parse(path)
-      end
+        storage = if File.exists?("#{self.name}.csv")
+                    File.open("#{self.name}.csv", "w")
+                  else
+                    File.new("#{self.name}.csv", "w")
+                  end
 
-      @entries
-    end
-
-    def store(entry)
-      @before_save_callbacks ||= []
-      @before_save_callbacks.each do |method|
-        entry.send(method)
-      end
-
-      entries << entry
-
-      response = persist!
-
-      @after_save_callbacks ||= []
-      @after_save_callbacks.each do |method|
-        entry.send(method)
-      end
-
-      response
-    end
-
-    def persist!
-      path = @path || "./db"
-
-      storage = if File.exists?(path)
-                  File.open(path, "w")
-                else
-                  File.new(path, "w")
-                end
-
-      case @persistence_strategy ||= :yaml
-      when :yaml
-        response = storage.write(entries.to_yaml)
-      when :csv
-        response = storage.write(entries.to_csv)
+        success = storage.write(records.to_csv)
       else
         raise PersistenceError, "No persistence strategy set"
       end
 
-      response
-    end
-
-    def validate(method, options, &block)
-      @validation_callbacks ||= []
-      @validation_callbacks << method
-    end
-
-    def run_validations(entry)
-      @before_validation_callbacks ||= []
-      @before_validation_callbacks.each do |method|
-        entry.send(method)
-      end
-
-      @validation_callbacks ||= []
-      @validation_callbacks.each do |method|
-        begin
-          entry.send(method)
-        rescue ValidationError => error
-          # entry has no .errors accessor, will need one!
-          entry.errors.push([method, error.message])
-        end
-      end
-
-      @after_validation_callbacks ||= []
-      @after_validation_callbacks.each do |method|
-        entry.send(method)
-      end
-    end
-
-    private
-
-    attr_writer :entries
-
-    def entries
-      @entries ||= []
+      success
     end
   end
 end
