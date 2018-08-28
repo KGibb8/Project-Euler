@@ -4,7 +4,8 @@ module Repository
   class Collection
     include Enumerable
 
-    ACCESSORS = [:first, :second, :third, :fourth, :fifth, :sixth, :seventh, :eighth, :ninth, :tenth]
+    # .first? comes with Enumerable
+    ACCESSORS = [:second, :third, :fourth, :fifth, :sixth, :seventh, :eighth, :ninth, :tenth]
 
     ACCESSORS.each_with_index do |method_sym, i|
       define_method method_sym do
