@@ -51,8 +51,10 @@ module Validations
   module ClassMethods
     def validate(method, options = {}, &block)
       @validation_callbacks ||= []
-      callback = block_given? ? block : Proc.new {|record| record.send(method) }
-      @validation_callbacks << { callback: callback, options: options }
+      @validation_callbacks << Callbacks::Callback.new(
+        to_call: block_given? ? block : Proc.new { |record| record.send(method) },
+        method_name: method
+      )
     end
 
     def run_validations(record)

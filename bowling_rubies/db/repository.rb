@@ -9,15 +9,30 @@ require './lib/validations'
 module Repository
   PersistenceError = Class.new(StandardError)
 
-
   def self.included(base)
     base.include(Callbacks)
     base.include(Validations)
-    base.extend(ClassMethods)
     base.include(InstanceMethods)
+    base.extend(ClassMethods)
   end
 
   module InstanceMethods
+    def ==(other)
+      return false unless self.class == other.class
+
+      self.instance_variables.each do |variable|
+        accessor_method = variable.to_s.gsub(/@/,'').to_sym
+        return false unless self.send(accessor_method) == other.instance_variable_get(variable)
+      end
+
+      other.instance_variables.each do |variable|
+        accessor_method = variable.to_s.gsub(/@/,'').to_sym
+        return false unless other.send(accessor_method) == self.instance_variable_get(variable)
+      end
+
+      true
+    end
+
     def initialize(params = Hash.new)
       unless params.kind_of? Hash
         raise ArgumentError, "initialize with a hash"
@@ -42,12 +57,10 @@ module Repository
 
       index = self.class.records.index(self)
 
-      self.class.records.delete_at(index).tap do |destroyed|
-        if destroyed
-          after_destroy_callbacks = self.class.instance_variable_get("@after_destroy_callbacks") || []
-          after_destroy_callbacks.each { |callback| callback.(self) }
-          self.class.persist
-        end
+      if self.class.records.delete_at(index)
+        after_destroy_callbacks = self.class.instance_variable_get("@after_destroy_callbacks") || []
+        after_destroy_callbacks.each { |callback| callback.(self) }
+        self.class.persist
       end
 
       self
@@ -60,8 +73,6 @@ module Repository
       params.each do |k, v|
         self.send("#{k.to_sym}", v)
       end
-
-      @attributes = params
 
       self.save
 
@@ -90,6 +101,12 @@ module Repository
 
     def persisted?
       !self.class.records.index(self).nil?
+    end
+
+    private
+
+    def equals(this, other, &block)
+
     end
   end
 
